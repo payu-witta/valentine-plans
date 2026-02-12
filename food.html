@@ -4,61 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food Selection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/food.css" />
   </head>
   <body>
     <div id="foodquestion">
-      <b>What food would you like to eat?</b>
+      <b>What food would you like to eat? (pick 3)</b>
     </div>
 
     <div class="food-selection">
       <div class="food-item">
-        <img src="food/burgers.jpeg" alt="Burgers, fries and fried chicken" />
-        <label
-          ><input
-            type="checkbox"
-            name="food"
-            value="Burgers, fries and fried chicken"
-          />
-          burgers and fried chicken</label
-        >
+        <img src="food/placeholder-american.jpeg" alt="American Food" />
+        <label>
+          <input type="checkbox" name="food" value="American Food" />
+          American Food
+        </label>
       </div>
       <div class="food-item">
-        <img src="food/dog.jpeg" alt="dog" />
-        <label
-          ><input type="checkbox" name="food" value="hotdog" /> hotdog</label
-        >
+        <img src="food/sushi.jpeg" alt="Sushi" />
+        <label>
+          <input type="checkbox" name="food" value="Sushi" />
+          Sushi
+        </label>
       </div>
       <div class="food-item">
-        <img src="food/koreanfood.jpeg" alt="koreanfood" />
-        <label
-          ><input type="checkbox" name="food" value="Korean food" /> korean
-          food</label
-        >
+        <img src="food/placeholder-mexican.jpeg" alt="Mexican" />
+        <label>
+          <input type="checkbox" name="food" value="Mexican" />
+          Mexican
+        </label>
       </div>
       <div class="food-item">
-        <img src="food/pasta.jpeg" alt="pasta" />
-        <label><input type="checkbox" name="food" value="pasta" /> pasta</label>
+        <img src="food/placeholder-vietnamese.jpeg" alt="Vietnamese" />
+        <label>
+          <input type="checkbox" name="food" value="Vietnamese" />
+          Vietnamese
+        </label>
       </div>
       <div class="food-item">
-        <img src="food/pizza.jpeg" alt="pizza" />
-        <label><input type="checkbox" name="food" value="pizza" /> pizza</label>
+        <img src="food/placeholder-thai.jpeg" alt="Thai" />
+        <label>
+          <input type="checkbox" name="food" value="Thai" />
+          Thai
+        </label>
       </div>
       <div class="food-item">
-        <img src="food/salad.jpeg" alt="salad" />
-        <label><input type="checkbox" name="food" value="salad" /> salad</label>
+        <img src="food/placeholder-italian.jpeg" alt="Italian" />
+        <label>
+          <input type="checkbox" name="food" value="Italian" />
+          Italian
+        </label>
       </div>
       <div class="food-item">
-        <img src="food/steak.jpeg" alt="steak" />
-        <label><input type="checkbox" name="food" value="steak" /> steak</label>
+        <img src="food/koreanfood.jpeg" alt="Korean Food" />
+        <label>
+          <input type="checkbox" name="food" value="Korean Food" />
+          Korean Food
+        </label>
       </div>
       <div class="food-item">
-        <img src="food/sushi.jpeg" alt="sushi" />
-        <label><input type="checkbox" name="food" value="sushi" /> sushi</label>
+        <img src="food/steak.jpeg" alt="Steak" />
+        <label>
+          <input type="checkbox" name="food" value="Steak" />
+          Steak
+        </label>
       </div>
     </div>
-    <button class="button" onclick="location.href='dessert.html'">
+    
+    <div id="error-message" style="display: none; color: #ff6b9d; font-size: 20px; margin-top: 10px; text-align: center;">
+      Please select exactly 3 options!
+    </div>
+    
+    <button class="button" id="continue-btn">
       Continue UWU
     </button>
+    
+    <script src="js/food.js"></script>
   </body>
 </html>

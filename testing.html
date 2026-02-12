@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Site - Testing Guide</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        h1 {
+            color: #c44569;
+        }
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .page-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background: #ff6b9d;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .page-link:hover {
+            background: #c44569;
+        }
+        .checklist {
+            margin: 10px 0;
+        }
+        .status {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .ready { background: #4CAF50; color: white; }
+        .pending { background: #ff9800; color: white; }
+    </style>
+</head>
+<body>
+    <h1>🌹 Valentine Website - Testing Guide</h1>
+    
+    <div class="section">
+        <h2>📱 Quick Navigation</h2>
+        <p>Test each page by clicking the links below:</p>
+        <a href="index.html" class="page-link">1. Main Page</a>
+        <a href="food.html" class="page-link">2. Food</a>
+        <a href="dessert.html" class="page-link">3. Dessert</a>
+        <a href="activities.html" class="page-link">4. Activities</a>
+        <a href="lastpage.html" class="page-link">5. Final Page</a>
+    </div>
+
+    <div class="section">
+        <h2>✅ Testing Checklist</h2>
+        <div class="checklist">
+            <input type="checkbox" id="test1">
+            <label for="test1">Main page loads with animated envelope</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test2">
+            <label for="test2">Clicking envelope opens the valentine question</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test3">
+            <label for="test3">"No" button runs away from mouse</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test4">
+            <label for="test4">"Yes" button takes you to food page</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test5">
+            <label for="test5">Food page blocks if not exactly 3 selected</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test6">
+            <label for="test6">Food page continues with exactly 3 selected</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test7">
+            <label for="test7">Dessert page allows any number of selections</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test8">
+            <label for="test8">Activities page works correctly</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test9">
+            <label for="test9">Final page shows Tam's photo beautifully</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test10">
+            <label for="test10">All animations work smoothly</label>
+        </div>
+        <div class="checklist">
+            <input type="checkbox" id="test11">
+            <label for="test11">Website works on mobile (test on phone!)</label>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🖼️ Image Status</h2>
+        <p><strong>Already Added:</strong> <span class="status ready">✓ READY</span></p>
+        <ul>
+            <li>All main page images (envelope, cat, buttons)</li>
+            <li>Tam's photo</li>
+            <li>Background image</li>
+            <li>Sushi, Korean food, Steak, Boba, Dumplings</li>
+            <li>Arcade, Cinema, Museum</li>
+        </ul>
+        
+        <p><strong>Still Needed:</strong> <span class="status pending">⚠ PENDING</span></p>
+        <ul>
+            <li>5 food type images (American, Mexican, Vietnamese, Thai, Italian)</li>
+            <li>5 dessert images (Cookies, Froyo, Buttercup, Ice Cream, Chocolate)</li>
+            <li>2 activity images (Shopping, Bowling)</li>
+        </ul>
+        <p><em>Total: 12 images needed - See IMAGE-CHECKLIST.md for details</em></p>
+    </div>
+
+    <div class="section">
+        <h2>🚀 Deployment Options</h2>
+        <ol>
+            <li><strong>Netlify (Easiest):</strong> Drag & drop this folder at netlify.com</li>
+            <li><strong>GitHub Pages:</strong> Push to GitHub, enable Pages in settings</li>
+            <li><strong>Vercel:</strong> Connect GitHub repo at vercel.com</li>
+            <li><strong>Local Testing:</strong> Use "Live Server" extension in VS Code</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>💝 Final Steps</h2>
+        <ol>
+            <li>Add all missing images (see IMAGE-CHECKLIST.md)</li>
+            <li>Complete the testing checklist above</li>
+            <li>Test on mobile device</li>
+            <li>Deploy to hosting service</li>
+            <li>Share with Tam! 🎉</li>
+        </ol>
+    </div>
+
+    <div class="section" style="background: #ffe6f0; border: 2px solid #ff6b9d;">
+        <h2>❤️ Good Luck!</h2>
+        <p>You've got this! Tam is going to love it. 💕</p>
+        <p><em>P.S. Don't forget to test everything before the big reveal!</em></p>
+    </div>
+</body>
+</html>
